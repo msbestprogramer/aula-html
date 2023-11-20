@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semântico</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+       .topo {
+         background-color: gray;
+         padding: 20px;
+         text-align: center;
+       }
+
+       .menu {
+        background-color: #5c5959;
+        overflow: hidden;
+       }
+       
+       .menu a {
+        text-decoration: none;
+        padding: 14px 16px;
+        display: block; 
+        float: left;               
+        color: white ;
+        background-color: #5c5959;
+       }
+      .coluna-50{
+        float: left;
+        width: 50%;
+        padding: 15px;
+      }
+
+      .voltar {
+        text-decoration: none;
+        float:right;
+        padding: 10px;
+        background-color: #5c5959;
+        color: white;
+        border-radius: 8%;
+         margin-right: 20px; 
+        
+      }
+
+      .voltar:hover{
+        background-color: rgb(220, 20, 177);
+        padding: 11px;
+        color:white;
+      }
+/* 
+      .rodape{
+        background-color: gray;
+        padding: 14px 16px;
+        display: block;
+        width: 100%;
+      } */
+    </style>
+</head>
+<body>
+    
+  <!-- tag semântica de cabeçalho -->
+  <header class="topo">
+      <h1>Topo</h1>
+      <p>Aqui a parte do topo</p>
+  </header>
+
+  <!-- tag semântica de navegacao -->
+  <nav class="menu">
+      <a href="index.html">Link</a>
+      <a href="index.html">Link</a>
+      <a href="index.html">Link</a>
+      <a href="index.html">Link</a>
+  </nav>
+
+  <!-- tag semântica de seção 1 -->
+  <section class="coluna-50">
+     <h2>Coluna</h2>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore omnis debitis at dolorum possimus! Reiciendis, minima odio quaerat commodi veniam maiores. Omnis quas iste blanditiis, cum quis perferendis eveniet porro.</p>
+  </section>
+    
+  <!-- tag semântica de seção 2 -->
+  <section class="coluna-50">
+    <h2>Coluna</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore omnis debitis at dolorum possimus! Reiciendis, minima odio quaerat commodi veniam maiores. Omnis quas iste blanditiis, cum quis perferendis eveniet porro.</p>
+  </section>
+
+  <!-- rodape --> 
+   <footer class="rodape"> 
+     <a class="voltar" href="index.html">Voltar</a>
+
+   </footer>
+  
+
+</body>
+</html>
