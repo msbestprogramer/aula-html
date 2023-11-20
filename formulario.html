@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <h1>Formulário</h1>
+
+    <form>
+
+       <!-- CAPTION DO NOME -->
+       <label for="campo_nome">Nome</label>
+
+       <!-- EDIT DO NOME -->
+       <input id="campo_nome"type="Text" placeholder="Insira seu nome aqui" required>
+
+      <br><br>
+
+      <!-- CAPTION DO CAMPO EMAIL -->
+      <label for="campo_email">e-mail</label>
+
+      <!-- EDIT DO CAMPO EMAIL -->      
+      <input id="campo_email" type="email"  placeholder="Insira seu email" required>
+      
+      <br><br>
+
+      <!-- CAPTION DO CAMPO SENHA -->
+      <label for="campo_senha">Senha</label>
+
+      <!-- EDIT DO CAMPO SENHA -->  
+      <input id="campo_senha" type="password"
+      placeholder="Insira sua senha" required>
+
+      <br><br>
+      
+      <!-- PARA O TYPE=RADIO, O CAMPO NAME TEM QUE AER IGUAL EM TODOS OS INPUTS, INDICANDO QUE VAZ PARTE DO MESMO RADIO GROUP. -->
+      <h2>Tipo de Relatório</h2>
+
+        <!-- RADIOBUTTON OFICAL-->
+        <input id="oficial1" type="radio" name="tprelatorio" value="1">
+
+        <!-- STRING DO CAMPO OFICIAL DO RADIO BUT-->      
+        <label for="oficial1">Oficial</label>
+
+        <br><br>
+
+        <!-- RADIOBUTTON IMPRESSAO-->      
+        <input id="Impressao1" type="radio" name="tprelatorio" value="2">
+
+        <!-- STRING DO CAMPO IMPRESSÃO DO RADIO BUT--> 
+        <label for="Impressao1">Impressão</label>
+
+        <br><br>
+
+      <!-- PARA O TYPE=CHECKBOX, O CAMPO NAME TEM QUE SER IGUAL EM TODOS OS INPUTS, INDICANDO QUE VAZ PARTE DO MESMO CHECKBOX. -->        
+        <h2>O que você tem em casa?</h2>  
+
+        <!-- CHECKBOX TV--> 
+        <input id="checkbox1" type="checkbox" name="item1" valye="TV">
+
+        <!-- LABEL TV -->
+        <label for="checkbox1">TV</label>
+
+        <br>
+
+        <!-- CHECKBOX GELADEIRA--> 
+        <input id="checkbox2" type="checkbox" name="item2" valye="Geladeira">
+
+        <!-- LABEL GELADEIRA -->
+        <label for="checkbox2">Geladeira</label>                    
+
+        <br>
+
+        <!-- CHECKBOX FOGÃO--> 
+        <input id="checkbox3" type="checkbox" name="item3" valye="Fogão">
+
+        <!-- LABEL FOGAO -->
+        <label for="checkbox3">Fogão</label> 
+
+        <br>
+
+        <!-- CHECKBOX SOFÁ--> 
+        <input id="checkbox4" type="checkbox" name="item4" valye="Sofá">
+
+        <!-- LABEL SOFA -->
+        <label for="checkbox4">Sofá</label>         
+
+        <br><br>
+
+    <!-- COMBO BOX -->        
+    <h2>Escolha uma cor</h2> 
+
+        <select name="" id="">
+            <option disabled selected value="">Selecione uma cor</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="azul">Azul</option>
+            <option value="amarelo">Amarelo</option>
+            <option value="roxo">Roxo</option>
+        </select>
+
+        <br><br><br><br>
+
+    <!-- memo -->        
+    <h2>Observações</h2> 
+
+        <!-- LABEL DA OBSERVACAO -->
+        <label for="obs">Observações</label>  
+
+        <!-- CAMPO OBSERVAÇÃO  -->
+        <textarea required placeholder="Informe a observação aqui" cols="60" id="obs" rows="5"></textarea>
+       
+        <br>
+
+        <br><br>
+
+        <!-- BOTÃO QUE ENVIA DADOS DO FORMULARIO -->
+        <input type="submit" value="Enviar Dados">
+  
+     </form>
+
+     <br><br>
+
+     <!-- PIPO BOTÃO - SE TIVER FORA DO FORM NÃO É SUBMETIDO, E NAÕ ENVIA OS DADOS DO FORMULARIO -->
+     <button>Clique aqui</button>
+
+    <br>
+    <hr>
+
+    <a href="index.html">Voltar</a>
+</body>
+</html>
