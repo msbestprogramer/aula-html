@@ -16,6 +16,7 @@
          background-color: gray;
          padding: 20px;
          text-align: center;
+         color: white;
        }
 
        .menu {
@@ -30,36 +31,85 @@
         float: left;               
         color: white ;
         background-color: #5c5959;
+        box-shadow: inset 0 0 2px 2px rgb(190, 184, 184);  
+        background-color: rgb(3, 3, 48);      
        }
+
+       .btnsair{
+        border: 0;
+        padding: 10px;
+        margin: 2px;
+        width: 100px;
+        height: 43px;
+        position: absolute;
+        right: 0; 
+        border-radius: 8px; 
+        text-align: center; 
+        font-size: small;       
+       }
+
+       .btnsair:hover{
+        background-color: rgb(220, 20, 177);
+      }     
+      
+      .btns{
+        border: 0;
+        padding: 10px;
+        margin: 2px;
+        width: 100px;
+        height: 43px;
+        border-radius: 8px; 
+        text-align: center; 
+        font-size: small; 
+               
+       }
+
+       .btns:hover{
+        background-color: rgb(220, 20, 177);
+      }            
+
       .coluna-50{
         float: left;
         width: 50%;
         padding: 15px;
+        box-shadow: inset 0 0 3px 3px rgb(164, 164, 170);
+      }
+
+      .coluna-50:hover{
+        background-color: rgb(224, 209, 209)  ;
+        padding: 15.8px;
       }
 
       .voltar {
         text-decoration: none;
+        text-align: center;
         float:right;
-        padding: 10px;
-        background-color: #5c5959;
+        padding: 13px; 
+        width: 100px;
+        height: 45px;
+        background-color:  rgb(3, 3, 48);
         color: white;
-        border-radius: 8%;
-         margin-right: 20px; 
-        
+        border-radius: 8%; 
+        margin-right: 10px; 
+        margin-top: 5px;
+        box-shadow: inset 0 0 2px 2px rgb(190, 184, 184); 
+        font-size: small;
       }
 
       .voltar:hover{
         background-color: rgb(220, 20, 177);
-        padding: 11px;
+        padding: 15px;
         color:white;
       }
-/* 
-      .rodape{
-        background-color: gray;
-        padding: 14px 16px;
-        display: block;
+ 
+       .rodape{
+        position: absolute;
+        bottom: 0; /*fixa o rodapé no footer */
         width: 100%;
-      } */
+        height: 60px;
+        background-color: gray;
+        display: block;
+      }  
     </style>
 </head>
 <body>
@@ -72,10 +122,10 @@
 
   <!-- tag semântica de navegacao -->
   <nav class="menu">
-      <a href="index.html">Link</a>
-      <a href="index.html">Link</a>
-      <a href="index.html">Link</a>
-      <a href="index.html">Link</a>
+      <a class="btns" href="index.html">Link</a>
+      <a class="btns" href="index.html">Link</a>
+      <a class="btns" href="index.html">Link</a>
+      <a class="btnsair" href="index.html">Sair</a>
   </nav>
 
   <!-- tag semântica de seção 1 -->
@@ -89,6 +139,8 @@
     <h2>Coluna</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore omnis debitis at dolorum possimus! Reiciendis, minima odio quaerat commodi veniam maiores. Omnis quas iste blanditiis, cum quis perferendis eveniet porro.</p>
   </section>
+
+
 
   <!-- rodape --> 
    <footer class="rodape"> 
