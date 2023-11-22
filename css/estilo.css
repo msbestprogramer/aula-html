@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+   .topo {
+     position: sticky;
+     top: 0;
+     left: 0; 
+     /* COR DE FUNDO */
+     background-color: gray;
+     /* VINCULA UMA IMAGEM NO FUNDO */
+     background-image: URL("../IMG/mao.jpg");
+     /* PEGA TODA AREA, TAMANHO QUE QUER QUE APARECA */
+     background-size:cover;
+     /* POSICIONA A IMAGEM */
+     background-position: center;
+     /* INDICA SE REPETE OU NAO A IMAGEM */
+     background-repeat: no-repeat;
+
+     /* essa forma substitui a decima */
+     /* background: GRAY URL("../IMG/mao.jpg") no-repeat center;
+     background-size:cover; */
+
+     padding: 20px;
+     text-align: center;
+     color: #5c5959;
+
+     /* borda da div */
+     border: 5px solid red;
+     border-left: 5px solid blue;
+     border-right: 5px solid blue;
+
+     /* arredonda a borda */
+     border-radius: 20px;
+       /* topo direita baixo esquerda */
+     margin:20px 20px 20px 20px;
+     opacity: 0.5;
+   }
+
+   .menu {
+     background-color: #5c5959; 
+     overflow: hidden; 
+     
+   }
+   
+   .menu a {
+    text-decoration: none;
+    /* preeche o elemento topo direita baixa esq. */
+    padding: 14px 16px;
+    display: block;  
+    float: left;               
+    color: white ;
+    background-color:#5c5959;
+    box-shadow: inset 0 0 2px 2px rgb(190, 184, 184);  
+    background-color: rgb(3, 3, 48); 
+    /* topo dir baixo esq */
+    margin:5px 5px 5px 5px;     
+   }
+
+   .btnsair{
+    border: 0;
+    padding: 10px;
+    margin: 2px;
+    width: 100px;
+    height: 43px;
+    position: absolute;
+    right: 0; 
+    border-radius: 8px; 
+    text-align: center; 
+    font-size: small;       
+   }
+
+   .btnsair:hover{
+    background-color: rgb(220, 20, 177);
+  }     
+  
+  .btns{
+    border: 0;
+    padding: 10px;
+    margin: 2px;
+    width: 100px;
+    height: 43px;
+    border-radius: 8px; 
+    text-align: center; 
+    font-size: small; 
+           
+   }
+
+   .btns:hover{
+    /* COR DE FUNDO */
+    background-color: rgb(220, 20, 177);
+  }            
+
+  
+  h2, h1, p {
+    /* COR DA LETRA  */
+    Color: black;
+  }
+
+  .coluna-50{
+    float: left;
+    max-width: 50%;
+    padding: 15px;
+    box-shadow: inset 0 0 3px 3px rgb(164, 164, 170);
+    /* espacamento entre as letras */
+    letter-spacing: 2px;
+    /* epacamento entre linhas */
+    line-height: 1.4;
+    /* espacamento entre palavras */
+    word-spacing: 15px;
+    
+    /* familia da fonte pode importar pelo googlefonts*/
+    font-family: 'Ysabeau Office', sans-serif;
+    
+    /* mostra a barra de rolagem */
+    /* overflow: scroll; */
+
+    
+  }
+
+  .coluna-50:hover{
+    background-color: rgb(224, 209, 209)  ;
+    padding: 15.8px;
+  }
+
+  .voltar {
+    text-decoration: none;
+    text-align: center;
+    float:right;
+    padding: 15px 30px 15px 30px; 
+    background-color:  rgb(3, 3, 48);
+    color: white;
+    border-radius: 8%; 
+    box-shadow: inset 0 0 2px 2px rgb(190, 184, 184); 
+    font-size: small;
+  }
+
+  .voltar:hover{
+    background-color: rgb(220, 20, 177);
+    padding: 15px 32px 15px 32px; 
+    color:white;
+  }
+
+   .rodape{
+    display: inline-block;
+    bottom: 0; /* fixa o rodapé no footer */
+    width: 100%;
+    background-color: gray;
+    padding: 5px 5px 5px 5px;
+  }
+
+  #center{
+    text-align: center;
+  }
